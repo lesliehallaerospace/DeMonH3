@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DeMon H3 – Detroit's Monday Kennel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Detroit's Monday Hash House Harriers kennel (DeMon H3)." />
+  <!-- social/meta bits kept from original -->
+  <meta property="og:site_name" content="DeMon" />
+  <meta property="og:title" content="DeMon H3 – Detroit's Monday Kennel" />
+  <meta property="og:description" content="Hash House Harriers" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://demonh3.com" />
+  <meta property="og:image" content="https://demonh3.com/assets/images/share.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://demonh3.com/" />
+
+  <style>
+    :root {
+      --bg: #0f1515;
+      --fg: #fff;
+      --accent: #96e0a7;
+      --max: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #0f1515 url("DeMon_files/background.jpg") center/cover fixed no-repeat;
+      color: var(--fg);
+      line-height: 1.5;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.65);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .topbar {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.5rem 1rem 1.25rem;
+    }
+
+    h1 {
+      margin: 0 0 .5rem;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      margin-bottom: 1rem;
+      max-width: 50rem;
+    }
+
+    nav {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      padding: .5rem 1rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+
+    nav a.secondary {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255,255,255,.35);
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    section {
+      background: rgba(0,0,0,.55);
+      border: 1px solid rgba(255,255,255,0.03);
+      padding: 1.75rem 1.5rem 1.5rem;
+      border-radius: .4rem;
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    ul.link-list {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem 1.25rem;
+    }
+
+    ul.link-list li a {
+      text-decoration: underline;
+    }
+
+    .marks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+
+    .mark-card {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.02);
+      padding: 1rem;
+      border-radius: .4rem;
+    }
+
+    .mark-card img {
+      max-width: 3rem;
+      display: block;
+      margin-bottom: .5rem;
+    }
+
+    iframe {
+      width: 100%;
+      border: 0;
+      min-height: 420px;
+    }
+
+    @media (min-width: 900px) {
+      iframe.calendar-frame,
+      iframe.hareline-frame {
+        min-height: 600px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <div class="topbar">
+      <h1>DeMon H3</h1>
+      <p class="tagline">Detroit's Monday Kennel – Hash House Harriers. Trails for all backgrounds and fitness levels.</p>
+      <nav>
+        <a href="#calendar">Calendar</a>
+        <a href="#hareline" class="secondary">Hareline</a>
+        <a href="#hash-cash" class="secondary">Hash Cash</a>
+        <a href="#about" class="secondary">About / Good to Know</a>
+        <a href="#marks" class="secondary">Marks</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CALENDAR -->
+    <section id="calendar">
+      <h2>Calendar</h2>
+      <p>
+        Unless otherwise noted in the trail notes, hash time is <strong>6:30 pm</strong>, hares away at
+        <strong>6:45 pm</strong>, and pack away at <strong>7:00 pm sharp</strong>. Trail is expected to be completed by
+        <strong>9:00 pm</strong> and circle completed no later than <strong>9:15 pm</strong>. :contentReference[oaicite:1]{index=1}
+      </p>
+      <iframe
+        class="calendar-frame"
+        src="https://calendar.google.com/calendar/embed?src=demonhashhouseharriers%40gmail.com&ctz=America%2FDetroit">
+      </iframe>
+    </section>
+
+    <!-- HARELINE -->
+    <section id="hareline">
+      <h2>Hareline</h2>
+      <p>
+        Hareline for DeMon H3 is composed of volunteers and voluntold FRBs. Please contact the
+        <a href="mailto:demonhashhouseharriers@gmail.com">Champs</a> if you’d like to lay a trail. Otherwise, the FRB
+        (first runner to the first beer check) will be assigned to the Hareline during circle. :contentReference[oaicite:2]{index=2}
+      </p>
+      <!-- original embedded public Google Sheet -->
+      <iframe
+        class="hareline-frame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrLhTjqkqKLdPLY4hXcxR9EhfPqE77283Kz_-upICYIUACzIZqeWyXSDapPGAmJLNv2Z7v6B0C9sQg/pubhtml?gid=0&single=true&widget=true&headers=false">
+      </iframe>
+    </section>
+
+    <!-- HASH CASH -->
+    <section id="hash-cash">
+      <h2>Hash Cash</h2>
+      <p>
+        Hash cash is <strong>$5</strong>, covering the finest cheapest beer we can find and minimal snacks.
+        Please contact the <a href="mailto:demonhashhouseharriers@gmail.com">Champs</a> if you have a specific allergen
+        or need. Hash cash is accepted via Venmo or cash day-of. :contentReference[oaicite:3]{index=3}
+      </p>
+    </section>
+
+    <!-- ABOUT / GOOD TO KNOW -->
+    <section id="about">
+      <h2>Good to Know</h2>
+      <p>
+        While this kennel is running-focused, trails are laid in an attempt to keep the pack together throughout the run.
+        DeMon H3 welcomes individuals of all backgrounds and fitness levels. Trails are typically 5–7 miles. Bashing
+        (bike hashing) is allowed but you may need to improvise on your own to find trail in non-bikeable areas. :contentReference[oaicite:4]{index=4}
+      </p>
+      <p>
+        Our kennel is committed to creating a respectful and inclusive environment. Some songs may not be sung during our
+        circles. If anyone indicates that a song is inappropriate, it will be stopped and another song picked. We want a
+        safe, welcoming atmosphere for all hashers. :contentReference[oaicite:5]{index=5}
+      </p>
+
+      <h3>Attendance &amp; Mismanagement</h3>
+      <p>
+        Our mismanagement is not determined by free and fair elections, but by the top six attendees over the trailing
+        twelve months — active participation = leadership. :contentReference[oaicite:6]{index=6}
+      </p>
+      <p>
+        <a href="https://docs.google.com/spreadsheets/d/1ywPLC_x4-jTbaGJpKmh7-5mi1mbTA_ai5Llq0PhO3kw/edit?usp=sharing">
+          Attendance / Mismanagement Sheet
+        </a>
+      </p>
+
+      <h3>Heritage</h3>
+      <p>
+        DeMon H3 was founded by A Girl Named Steve and Harry Squatter. DeMon H3 is a demon mutant hybrid of its two mother
+        kennels MoA2H3 and SeaMon H3. :contentReference[oaicite:7]{index=7}
+      </p>
+      <ul class="link-list">
+        <li><a href="https://moa2h3.org/">MoA2H3</a></li>
+        <li><a href="https://wh3.org/">SeaMon H3</a></li>
+      </ul>
+
+      <h3>Local Area Hashes</h3>
+      <ul class="link-list">
+        <li><a href="https://moa2h3.org/">Detroit / Ann Arbor, MI: Motown Ann Arbor H3</a></li>
+        <li><a href="https://glh3.net/">Lansing, MI: Greater Lansing H3</a></li>
+        <li><a href="https://www.facebook.com/groups/95783901436/">Sarnia, ON: Sarnia Chemical Waste H3</a></li>
+        <li><a href="https://www.meetup.com/rubber-city-hash-house-harriers-and-harriettes/">Akron, OH: Rubber City H3</a></li>
+        <li><a href="https://www.renegadeh3.com/">Columbus, OH: Renegade H3</a></li>
+        <li><a href="https://www.facebook.com/groups/PtownHashers/about/">Petoskey, MI: Ptown H3</a></li>
+        <li><a href="https://www.facebook.com/groups/404147646276146/">Traverse City, MI: Cherry Capital H3</a></li>
+        <li><a href="https://www.facebook.com/groups/oninh3/">Dayton, OH: On-In H3</a></li>
+        <li><a href="http://www.fortwaynehash.com/wordpress/ftrooph3/">Fort Wayne, IN: F Troop H3</a></li>
+      </ul>
+      <!-- the original has more, but this keeps main nearby links -->
+    </section>
+
+    <!-- WHAT IS HASHING + MARKS -->
+    <section id="marks">
+      <h2>What is Hashing?</h2>
+      <p>
+        Our friends at MoA2H3 have a great explanation; our kennel follows their guidelines except when noted differently
+        in the marks below. :contentReference[oaicite:8]{index=8}
+      </p>
+      <ul class="link-list">
+        <li><a href="https://moa2h3.org/faq/">MoA2H3 FAQ</a></li>
+        <li><a href="https://www.youtube.com/watch?v=EPQsg354Dew&ab_channel=SeanBaello">YouTube</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Hash_House_Harriers">H3 Wikipedia</a></li>
+      </ul>
+
+      <h2>DeMon H3 Marks</h2>
+      <p>Unless otherwise noted in live trail talk, DeMon H3 uses the following marks: :contentReference[oaicite:9]{index=9}</p>
+
+      <div class="marks-grid">
+        <div class="mark-card">
+          <h3>Standard Trail Mark</h3>
+          <img src="DeMon_files/image02.jpg" alt="Standard trail mark" />
+          <p>
+            Typically a blob of flour, but could be chalk/drywall, arrow, or even toilet paper. A minimum of three (3)
+            marks is a true trail. If you no longer see any marks, you are either lost or on a false trail — go back to
+            the last known mark. :contentReference[oaicite:10]{index=10}
+          </p>
+        </div>
+
+        <div class="mark-card">
+          <h3>No Marks</h3>
+          <p>
+            You are lost or not on trail. Do not blow your whistle or call On-On. Listen for the pack and try to find
+            trail marks. :contentReference[oaicite:11]{index=11}
+          </p>
+        </div>
+
+        <div class="mark-card">
+          <h3>Danger Can</h3>
+          <img src="DeMon_files/image16.jpg" alt="Danger can" />
+          <p>
+            Faster version of a beer check / FRB check. Beer is hidden nearby. Pass it around; the person who gets it to
+            leak cracks it and drinks/passes. Everyone waits until it’s done to regroup. :contentReference[oaicite:12]{index=12}
+          </p>
+        </div>
+
+        <div class="mark-card">
+          <h3>Beer Near</h3>
+          <img src="DeMon_files/image12.jpg" alt="Beer near" />
+          <p>
+            This is why we run. Beverages should be nearby, sometimes partially hidden from muggles. :contentReference[oaicite:13]{index=13}
+          </p>
+        </div>
+
+        <div class="mark-card">
+          <h3>On-In</h3>
+          <p>The end of the hash. :contentReference[oaicite:14]{index=14}</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
